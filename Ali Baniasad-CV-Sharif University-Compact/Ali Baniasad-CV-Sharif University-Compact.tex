@@ -1,0 +1,339 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+%\hypersetup{
+%	colorlinks,
+%	citecolor=violet,
+%	linkcolor=red,
+%	urlcolor=blue}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{ #1} & \textbf{\small #2} \\
+      \textsl{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+\begin{center}
+    {\Huge \scshape Ali BaniAsad} \\ \vspace{1pt}
+    Tehran, Azadi Ave, P932+FM4, Iran \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +98 991-214-7276 ~ \href{mailto:alibaniasad1999@yahoo.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{alibaniasad1999@yahoo.com}} ~ 
+    \href{https://linkedin.com/in/alibaniasad1999/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/alibaniasad1999}}  ~
+    \href{https://github.com/alibaniasad1999}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/alibaniasad1999}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+  {Sharif University of Technology}{Sep. 2022 -- Nov 2024 (Expected)}
+  {Master of Science in Aerospace Engineering}{Tehran, Iran}
+  \vspace{-3pt}
+  
+    \resumeSubheading
+      {Sharif University of Technology}{Sep. 2017 -- May 2022}
+      {Bachelor of Science in Aerospace Engineering,
+      GPA: 3.72/4 (17.56/20) last 6 semesters
+      }{Tehran, Iran}
+      
+%      \resumeSubheading
+%      {Allameh Helli High School
+%      }{Sep. 2010 -- July 2017}
+%      {Diploma in Mathematics,
+%      GPA: 4/4 (19.85/20)
+%      }{Kerman, Iran}
+      
+      
+  \resumeSubHeadingListEnd
+  
+  
+ \vspace{-18pt}
+%------RELEVANT COURSEWORK-------
+\section{Research Interests}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item \small Reinforcement Learning
+                \item Optimal Control
+                \item Artificial Intelligence
+                \item Deep Learning
+                \item Robotics
+                \item Computer Vision
+                \item Automatic Control
+                \item Game Theory
+            \end{itemize}
+        \end{multicols}
+        \vspace*{3.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+\vspace{1pt}
+    \section{Publications
+    \href{https://scholar.google.com/citations?user=KeKpSvEAAAAJ&hl=en}{{\normalfont \textit{\textcolor{blue}{[Google Scholar profile \faGraduationCap]}}}} 
+    }
+    %\resumeSubHeadingListStartt
+    %\resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+    \resumeItemListStart
+    \resumeItem{\textbf{Ali BaniAsad}, Alireza Sharifi, Reza Pordal, Hadi Nobahhari. "Attitude Control of a 3-DoF Quadrotor Platform Using a Linear Quadratic Integral Differential Game Approach." \textit{ISA Transactions, 
+        \href{https://doi.org/10.1016/j.isatra.2024.03.005}{\textcolor{blue}{Elsevier}}}, 2024.}
+     \vspace{-6pt}
+    \resumeItem{Hadi Nobahhari,  \textbf{Ali BaniAsad}, Alireza Sharifi. "Linear Quadratic Integral Differential Game Applied to the Real-time Control of a Quadrotor Experimental Setup." \textit{ICRoM, \href{https://doi.org/10.1109/ICRoM57054.2022.10025263}{\textcolor{blue}{IEEE}}}, 2022.}
+     \vspace{-6pt}
+    \resumeItem{Alireza Sharifi, \textbf{Ali BaniAsad}. "Robust In-Motion Transfer Alignment of Low-Grade Inertial Navigation Systems with Recurrent Neural Networks in the Event of Reference Malfunction." \textit{IEEE}, 2024 (Active)}
+     \vspace{-6pt}
+    \resumeItem{\textbf{Ali BaniAsad}, Hadi Nobahhari. "Robust Differential Game Reinforcement Learning with Soft Actor-Critic for Guidance in Low-Thrust Multi-Body Environments." \textit{AIAA}, 2024 (Active)}
+    \resumeItemListEnd
+    %\resumeSubHeadingListEnd
+    \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Researcher at
+      	\href{https://www.linkedin.com/company/cnav-lab/}{\textcolor{blue}{CNAV Lab \faLinkedin}} \href{https://github.com/CNAVLAB}{\faGithub} \textcolor{red}{
+          \href{https://youtube.com/@cnavlab?si=Fc-Y3oyKdgAmz3-5}{\faYoutube}} 
+      	 }{May 2020 -- Ongoing}
+      {Head of Lab (Current), Researcher (Former)}{Tehran, Iran}
+      \resumeItemListStart
+        \resumeItem{Led projects on embedded AI in C, Reinforcement Learning (RL), and ROS for robotic control systems.}
+        \resumeItem{Developed quadrotor tech and AI navigation, enhancing vehicle precision and safety.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Master's Thesis
+      	{\href{https://github.com/alibaniasad1999/master-thesis}{{\normalfont \textit{\textcolor{blue}{[GitHub} \faGithub  \textcolor{blue}{]}
+      	}}} }
+      }{August 2022 -- November 2024 (Expected)}
+      {Reinforcement Learning for Robotics in Complex Dynamical Systems}{Tehran, Iran}
+      \resumeItemListStart
+        \resumeItem{Investigated various Reinforcement Learning methods and compared their performance to classic control strategies.}
+        \resumeItem{Integrated ROS to implement and test real-world robotic systems, validating performance in practical scenarios.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Bachelor's Thesis
+    	{\href{https://github.com/alibaniasad1999/bachelor-thesis}{{\normalfont \textit{\textcolor{blue}{[GitHub} \faGithub  \textcolor{blue}{]}
+    	}}} }
+    }{February 2021 -- September 2023}
+    {Game Theory-Based Control for a Quadrotor with Three Degrees of Freedom}{Tehran, Iran}
+    \resumeItemListStart
+    \resumeItem{Controlled a quadcopter stand using differential game theory, employing Nash equilibrium for robust controller.}
+    \resumeItem{Evaluated performance through Simulink simulations and practical implementation on a three degree of freedom setup.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-8pt}
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+    {
+    	\textbf{\href{https://github.com/alibaniasad1999/Guidance-and-navigation}{\textcolor{blue}{Optimized Flocking of Autonomous Drones}}}
+    	$|$ \emph{Embedded C, HIL, Optimization, Simulink, Swarm}}{july 2023}
+    \resumeItemListStart
+    \resumeItem{Developed a UAV swarm model optimizing flocking under real-world constraints such as delays and obstacles.}
+    \resumeItem{Implemented and validated the model with Simulink simulations and HIL testing using a microcontroller.}
+    %		\resumeItem{Conducted field tests with a 30-drone system, demonstrating effective swarm coordination.}
+    \resumeItemListEnd
+
+          \vspace{-18pt}
+          \resumeProjectHeading
+          {\textbf{\href{https://github.com/alibaniasad1999/Heuristic-optimization-algorithms}{\textcolor{blue}{Multi-Objective Heuristic Optimization}}} $|$ \emph{OOP, Optimization Algorithms, Python}}{February 2023}
+          \resumeItemListStart
+          \resumeItem{Implemented the 
+          	\href{https://link.springer.com/article/10.1007/s12652-022-04332-8}{\textcolor{blue}{REMARK}}
+          	algorithm for multi-objective optimization with conflicting objectives.}
+          \resumeItem{Utilized heuristic methods to achieve high approximations of the Pareto set, balancing trade-offs between objectives.}
+          \resumeItemListEnd
+		
+          
+          \vspace{-18pt}
+          
+          
+          \resumeProjectHeading
+          {
+          	\textbf{\href{https://github.com/alibaniasad1999/DATCOM-Trim-Diagram-GUI}{\textcolor{blue}{Advanced Aircraft Trim Stability Analysis with DATCOM}}}
+          	$|$ \emph{Advanced UI, Aircraft Control, Python}}{March 2022}
+          \resumeItemListStart
+          \resumeItem{Developed an advanced UI for USAF DATCOM software, optimizing analysis and enhancing design precision.}
+          %      \resumeItem{Facilitated the creation and analysis of aircraft trim diagrams, enhancing design precision.}
+          
+          \resumeItemListEnd
+          
+          
+          
+          \vspace{-18pt}
+          \resumeProjectHeading
+          {
+          	\textbf{\href{https://github.com/alibaniasad1999/Airplane-Design-II}{\textcolor{blue}{AIAA Regional Jet Design Competition}}}
+          	$|$ \emph{Aircraft Design, Computer Modeling, MATLAB, Python}}{June 2021}
+          \resumeItemListStart
+          \resumeItem{Fully designed a regional jet, encompassing coding, computer design, and simulations.}
+          %          \resumeItem{Showcased expertise in aircraft development through comprehensive modeling and analysis for the competition.}
+          \resumeItemListEnd
+          
+          
+    \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+
+
+%-----------INVOLVEMENT---------------
+
+ 
+ 
+ \section{Awards and Honors}
+ %\resumeSubHeadingListStartt
+ %\resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+ \resumeItemListStart
+ \resumeItem{Iranian Aerospace Society’s \textbf{Best Undergraduate Thesis} Award.}
+ \vspace{-6pt}
+ \resumeItem{Ranked \textbf{Top 0.5\%} in Nationwide Undergraduate Entrance Exam among more than 150,000 participants,
+ 	2017.}
+%  \vspace{-6pt}
+%  \resumeItem{\textbf{Member of NODET} (National Organization for Development of Exceptional Talents).}
+ \resumeItemListEnd
+ %\resumeSubHeadingListEnd
+ \vspace{-16pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills} % TODO: check with new full cv
+ \begin{itemize}[leftmargin=0.15in, label={}]
+ 	\small{\item{
+\textbf{Programming Languages}{: C/C++, Embedded C, MATLAB, Python \faPython} \\
+\textbf{Tools and Platforms}{: Git \faGit*, Linux \faLinux, ROS, Simulink, \faTerminal  Terminal,  \LaTeX} \\
+\textbf{Libraries/Frameworks}{: Matplotlib, NumPy, Pandas, PyTorch, TensorFlow} \\
+\textbf{Quantitative Skills}{: Artificial Neural Networks, Data Structures, Deep Learning, Embedded Machine Learning, Heuristic Optimization, Image Processing, Machine Learning, Optimization, Reinforcement Learning, Robotics}
+
+% 			\textbf{Languages}{: Farsi (Native), English (Full Professional Proficiency)} \\
+ 	}}
+ \end{itemize}
+ 
+ \vspace{-16pt}
+
+
+
+
+\end{document}
