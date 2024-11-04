@@ -11,7 +11,8 @@
 *.cb
 *.cb2
 .*.lb
-
+.DS_Store
+**/.DS_Store
 ## Intermediate documents:
 *.dvi
 *.xdv
@@ -304,3 +305,4 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+.DS_Store
