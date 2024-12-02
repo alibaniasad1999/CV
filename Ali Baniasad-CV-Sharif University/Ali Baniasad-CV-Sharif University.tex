@@ -17,6 +17,9 @@
 \usepackage{fontawesome5}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage[left=0.5in,right=0.75in,top=1in,bottom=1in]{geometry}
+\usepackage{ifthen}
+\newboolean{noshad}
+\setboolean{noshad}{true} % Set to false to omit the author section
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Name & Contact Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,12 +32,12 @@
 
 	{\noindent \bf Contact Information} \\
 	\href{mailto:alibaniasad1999@yahoo.com}{\faEnvelope} Email: \href{mailto:alibaniasad1999@yahoo.com}{alibaniasad1999@yahoo.com}   \\
-	\faPhone \hspace{0pt}
-	Phone: (+98) 991-214-7276  \\
 	\href{https://linkedin.com/in/alibaniasad1999/}{\textcolor{blue}{\faLinkedin}}
 	LinkedIn: \href{https://linkedin.com/in/alibaniasad1999/}{alibaniasad1999} \\
 	\href{https://github.com/alibaniasad1999}{\faGithub}
-	GitHub: \href{https://github.com/alibaniasad1999}{alibaniasad1999}
+	GitHub: \href{https://github.com/alibaniasad1999}{alibaniasad1999}\\
+	\faPhone \hspace{0pt}
+	Phone: (+98) 991-214-7276
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-4pt}
@@ -156,11 +159,11 @@
 
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
-	\item \textbf{Ali BaniAsad}, Alireza Sharifi, Reza Pordal, Hadi Nobahhari. "Attitude Control of a 3-DoF Quadrotor Platform Using a Linear Quadratic Integral Differential Game Approach." \textit{ISA Transactions,
+	\item \textbf{Ali BaniAsad}, Alireza Sharifi, Reza Pordal, Hadi Nobahari. "Attitude Control of a 3-DoF Quadrotor Platform Using a Linear Quadratic Integral Differential Game Approach." \textit{ISA Transactions,
         \href{https://doi.org/10.1016/j.isatra.2024.03.005}{\textcolor{blue}{Elsevier}}}, 2024.
 	\item Alireza Sharifi, \textbf{Ali BaniAsad}. "Robust In-Motion Transfer Alignment of Low-Grade Inertial Navigation Systems with Recurrent Neural Networks in the Event of Reference Malfunction." \textit{Engineering Applications of Artificial Intelligence}, 2024
 	(\href{https://drive.google.com/file/d/19qd1IjmCQMv2Alldh55oYQSTPr03vjJL/view?usp=sharing}{\textcolor{blue}{Submited}}).
-	\item \textbf{Ali BaniAsad}, Hadi Nobahhari. "Robust Differential Game Reinforcement Learning with Soft Actor-Critic for Guidance in Low-Thrust Multi-Body Environments." \textit{Journal of Guidance, Control, and Dynamics,
+	\item \textbf{Ali BaniAsad}, Hadi Nobahari. "Robust Differential Game Reinforcement Learning with Soft Actor-Critic for Guidance in Low-Thrust Multi-Body Environments." \textit{Journal of Guidance, Control, and Dynamics,
 	AIAA}, 2024 (Active).
 	% AHRS AI when there is no AI
 	\item \textbf{Ali BaniAsad}, Alireza Sharifi. "Enhancing AHRS Results with Deep Learning LSTM Networks and Soft Actor-Critic for Real-Time Attitude Estimation in GNSS-Denied Environments"
@@ -174,7 +177,7 @@
 
 \vspace{6pt}
 \begin{itemize} \itemsep -2pt % Reduce space between items
-	\item Hadi Nobahhari,  \textbf{Ali BaniAsad}, Alireza Sharifi. "Linear Quadratic Integral Differential Game Applied to the Real-time Control of a Quadrotor Experimental Setup." \textit{ICRoM, \href{https://doi.org/10.1109/ICRoM57054.2022.10025263}{\textcolor{blue}{IEEE}}}, 2022.
+	\item Hadi Nobahari,  \textbf{Ali BaniAsad}, Alireza Sharifi. "Linear Quadratic Integral Differential Game Applied to the Real-time Control of a Quadrotor Experimental Setup." \textit{ICRoM, \href{https://doi.org/10.1109/ICRoM57054.2022.10025263}{\textcolor{blue}{IEEE}}}, 2022.
 \end{itemize}
 
 \vspace{0.2in} % Some whitespace between sections
@@ -198,25 +201,29 @@
 \noindent \textit{Head of Lab (Current), Researcher (Former) }
 \hfill Tehran, Iran \\
 \noindent Supervisors:
-\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Hadi Nobahari, PhD} and
-\href{https://ae.sharif.edu/~portal/faculty/1730782165}{Alireza Sharifi, PhD}
+\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Nobahari Hadi, PhD} and
+\href{https://ae.sharif.edu/~portal/faculty/1730782165}{Sharifi Alireza, PhD}
 \vspace{-8pt}
 \begin{itemize} \itemsep -4pt % Reduce space between items
     \item Integrated \textbf{embedded AI} with C programming to enhance \textbf{robotic control} system efficiency.
 	% \item Designed \textbf{RL} algorithms to enhance robotic \textbf{navigation}, \textbf{decision-making}, and adaptability.
     \item Developed AI-driven navigation systems (\href{https://github.com/alibaniasad1999/AHRS_AI}{\textcolor{blue}{INS-AI}}, \href{https://github.com/alibaniasad1999/GPS_INS}{\textcolor{blue}{AHRS-AI}}) to enhance \textbf{precision}, \textbf{safety}.
-    \item Employed \textbf{ROS} for inter-robot networking and swarm flight in \textbf{multi-agent} \href{https://www.bitcraze.io/products/old-products/crazyflie-2-0/}{\textcolor{blue}{Crazyflie}} drones.
+    \item Employed \textbf{ROS} for inter-robot networking and coordination in \textbf{multi-agent} systems.
     % \item Validated AI navigation in \textbf{real-world} applications to ensure \textbf{robustness} and \textbf{reliability}.
 \end{itemize}
 \vspace{-4pt}
 % \vspace{0.2in}
 \noindent
-{\bfseries  Robust Reinforcement Learning Guidance
+{\bfseries  Robust and Safe Reinforcement Learning
 \href{https://github.com/CNAVLAB}{\faGithub}
-} \hfill August 2022 -- November 2024 (Expected) \\
+} \hfill August 2022 -- December 2024 (Expected) \\
 \noindent \textit{Master's Thesis in Sharif University of Technology} \hfill Tehran, Iran \\
 \noindent Supervisors:
-\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Hadi Nobahari, PhD}
+\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Nobahari Hadi, PhD} \ifthenelse{\boolean{noshad}}
+{
+	and
+Mohammad Noshad, PhD
+ }{}
 \vspace{-8pt}
 \begin{itemize}  \itemsep -4pt % Slightly reduced spacing for sub-items
 	\item Investigated \textbf{Deep Reinforcement Learning} methods, comparing their performance with classical strategies, such as \textbf{MPC}, to identify strengths and weaknesses.
@@ -230,18 +237,18 @@
 \vspace{-4pt}
 % \vspace{0.2in}
 \noindent
-{\bfseries Game Theory-Based Control for a UAV
+{\bfseries Game Theory-Based Control for a 3DoF Setup
 \href{https://github.com/alibaniasad1999/bachelor-thesis}{\faGithub}
 \textcolor{red}{
 \href{https://youtu.be/SXZACxGaE1A?si=61yCRB8jFIZlldFG}{\faYoutube}}
 } \hfill February 2021 -- September 2023 \\
 \noindent \textit{Bachelor's Thesis in Sharif University of Technology} \hfill Tehran, Iran \\
 \noindent Supervisors:
-\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Hadi Nobahari, PhD} \\
+\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Nobahari Hadi, PhD} \\
 {\footnotesize \textbf{\textit{Awarded the Best Undergraduate Thesis \faMedal}}}
 \vspace{-8pt}
 \begin{itemize} \itemsep -4pt % Slightly reduced spacing for sub-items
-    \item Developed a robust \textbf{quadrotor} control system using \textbf{differential game theory}.
+    \item Developed a robust \textbf{robot} control system using \textbf{differential game theory}.
 	% , applying \textbf{Nash equilibrium} to solve the game and optimize performance under \textbf{uncertainty}.
 	 % parameter estimation of quad
 	 \item Employed \textbf{optimization} for \textbf{system identification}, enhancing control \textbf{reliability}.
@@ -255,18 +262,18 @@
 % \vspace{0.2in}
 
 \noindent
-{\bfseries Optimized Flocking of Autonomous Drones
-\href{https://github.com/alibaniasad1999/Guidance-and-navigation}{\faGithub}
+{\bfseries Coordination of Multi-Agent Autonomous Systems
+\href{https://github.com/alibaniasad1999/Coordination-of-Multi-Agent-Autonomous-Systems}{\faGithub}
 } \hfill July 2023 \\
 \noindent \textit{Project in Sharif University of Technology} \hfill Tehran, Iran \\
 \noindent Supervisors:
-\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Hadi Nobahari, PhD}
+\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Nobahari Hadi, PhD}
 % \\
 % {\footnotesize \textbf{\textit{Top Score Project \faMedal}}}
 \vspace{-8pt}
 \begin{itemize} \itemsep -4pt % Slightly reduced spacing for sub-items
     % \item Developed and optimized a swarm model, addressing \textbf{communication delays} and \textbf{obstacle avoidance}.
-	\item Optimized a swarm model for \textbf{communication delays} and \textbf{obstacle avoidance}.
+	\item Optimized a multi-agent model for \textbf{communication delays} and \textbf{obstacle avoidance}.
     \item Implemented and validated the model with \textbf{Simulink} simulations and \textbf{HIL} testing using \textbf{embedded C} on a \textbf{microcontroller}, ensuring robustness and reliability.
 	% \item Developed and optimized a \textbf{swarm} model for flocking behavior, addressing \textbf{communication delays} and environmental obstacles, then validated it through Simulink simulations and \textbf{HIL} testing with \textbf{embedded C} on a \textbf{microcontroller} to ensure robustness and reliability.
 \end{itemize}
@@ -280,7 +287,7 @@
 \hfill February 2023 \\
 \noindent \textit{Project in Sharif University of Technology} \hfill Tehran, Iran \\
 \noindent Supervisors:
-\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Hadi Nobahari, PhD}
+\href{https://ae.sharif.edu/~portal/faculty/1091235256}{Nobahari Hadi, PhD}
 % \\
 % {\footnotesize \textbf{\textit{Top Score Project \faMedal}}}
 \vspace{-8pt}
@@ -291,7 +298,7 @@
 \vspace{-4pt}
 % \vspace{0.2in}
 \noindent
-{\bfseries Advanced Aircraft Trim Stability Analysis with DATCOM
+{\bfseries Advanced Aircraft Trim Stability Analysis
 \href{https://github.com/alibaniasad1999/DATCOM-Trim-Diagram-GUI}{\faGithub}
 }
 \hfill March 2022 \\
@@ -302,7 +309,7 @@
 % {\footnotesize \textbf{\textit{My Top Star Repository \faStar}}}
 \vspace{-8pt}
 \begin{itemize} \itemsep -4pt % Slightly reduced spacing for sub-items
-    \item Developed an advanced \textbf{UI} for DATCOM software, enhancing aircraft  \textbf{stability analysis}.
+    \item Developed an advanced \textbf{UI} software, enhancing aircraft  \textbf{stability analysis}.
     \item  \textbf{Real-Time} visualization and \textbf{interactive} adjustments for aircraft performance \textbf{evaluation}.
     % \item Validated the UI for reliability, \textbf{optimizing} the \textbf{design process} for engineers and researchers.
 \end{itemize}
@@ -351,23 +358,23 @@
 	\item {\bfseries Automatic Control}
 	 \hfill September 2021 -- Present \\
 	\textit{Department of Aerospace Engineering, Sharif University of Technology}\\
-	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1091235256}{\textcolor{blue}{Hadi Nobahari}}, PhD and \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Alireza Sharifi}, PhD}
+	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1091235256}{\textcolor{blue}{Nobahari Hadi}}, PhD and \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Sharifi Alireza}, PhD}
 	\item {\bfseries Control Lab}
 	 \hfill September 2021 -- Present \\
 	\textit{Department of Aerospace Engineering, Sharif University of Technology}\\
-	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1091235256}{\textcolor{blue}{Hadi Nobahari}}, PhD and \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Alireza Sharifi}, PhD}
+	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1091235256}{\textcolor{blue}{Nobahari Hadi}}, PhD and \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Sharifi Alireza}, PhD}
 	\item {\bfseries Dynamics}
 	 \hfill September 2021 -- December 2023 \\
 	\textit{Department of Aerospace Engineering, Sharif University of Technology}\\
-	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Alireza Sharifi}}, PhD
+	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Sharifi Alireza}}, PhD
 	\item {\bfseries Introduction to Aerospace Engineering}
 	 \hfill September 2021 -- December 2023 \\
 	\textit{Department of Aerospace Engineering, Sharif University of Technology}\\
-	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Alireza Sharifi}}, PhD
+	Instructors: \href{https://ae.sharif.edu/~portal/faculty/1730782165}{\textcolor{blue}{Sharifi Alireza}}, PhD
 	\item {\bfseries Aircraft Design II}
 	\hfill September 2021 -- December 2021 \\
    \textit{Department of Aerospace Engineering, Sharif University of Technology}\\
-   Instructors: \href{http://ae.sharif.edu/~portal/faculty/1014037799}{\textcolor{blue}{Afshin Banazadeh}} PhD
+   Instructors: \href{http://ae.sharif.edu/~portal/faculty/1014037799}{\textcolor{blue}{Banazadeh Afshin}} PhD
 	\item \noindent{\bfseries Fundamentals of Programming (C/C++)}
 	\hfill September 2018 -- December 2018 \\
    \textit{Department of Computer Engineering, Sharif University of Technology}\\
@@ -781,6 +788,25 @@ based on Differential Game Theory".}
 \begin{center}
 	{\noindent \bfseries REFERENCES}
 \end{center}
+
+\ifthenelse{\boolean{noshad}}
+{
+	\begin{itemize}
+		\item \textbf{Noshad, Mohammad, PhD} \\
+		Assistant Professor of Aerospace Engineering, Sharif University of Technology \\
+	Dr. Noshad
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item \faGlobe \ \href{-5}{\textcolor{blue}{-}}
+				\item \faGraduationCap \ \href{https://scholar.google.com/citations?user=YJIJLs0AAAAJ&hl=en}{\textcolor{blue}{Google Scholar Profile}}
+				\item \faEnvelope \ \href{mailto:moh@shyld.ai}{moh@shyld.ai}
+				\item \faPhone \ +1 (669) 246-8140
+			\end{itemize}
+	\end{multicols}
+	\end{itemize}
+ }{}
+
+
 \begin{itemize}
 	\item \textbf{Sharifi, Alireza, PhD} \\
 	Assistant Professor of Aerospace Engineering, Sharif University of Technology \\
@@ -816,7 +842,9 @@ I served as both a researcher and a teaching assistant during this time.
 
 
 
-
+\ifthenelse{\boolean{noshad}}
+{}
+{
 \begin{itemize}
 	\item \textbf{Banazadeh, Afshin, PhD} \vspace{1pt}\\
 	\textit{Professor of Aerospace Engineering, Sharif University of Technology}
@@ -832,6 +860,7 @@ I have taken several courses with Dr. Banazadeh, achieving excellent results. I 
 		\end{itemize}
 \end{multicols}
 \end{itemize}
+}
 
 % \vspace{0.2in} % Some whitespace between sections
 
