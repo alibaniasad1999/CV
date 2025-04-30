@@ -141,12 +141,14 @@
   \resumeSubHeadingListStart
 
   \resumeSubheading
-  {Sharif University of Technology}{September 2022 -- February 2025 (Expected)}
+  {Sharif University of Technology}{Sep.\ 2022 -- Apr.\ 2025
+  }
   {Master of Science in Aerospace Engineering}{Tehran, Iran}
   \vspace{-3pt}
 
     \resumeSubheading
-      {Sharif University of Technology}{September 2017 -- May 2022}
+      {Sharif University of Technology}{Sep.\ 2017 -- May\ 2022
+      }
       {Bachelor of Science in Aerospace Engineering,
       GPA: 3.72/4 (17.56/20) last 6 semesters
       }{Tehran, Iran}
@@ -188,12 +190,17 @@
     %\resumeSubHeadingListStartt
     %\resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
     \resumeItemListStart
+    \resumeItem{Alireza Sharifi, \textbf{Ali BaniAsad}. "Applied an In-Motion Transfer Alignment Approach During Global Positioning System Outages Utilizing a Recurrent Neural Network Algorithm." \textit{Engineering Applications of Artificial Intelligence}, 2025
+    (\href{https://drive.google.com/file/d/19qd1IjmCQMv2Alldh55oYQSTPr03vjJL/view?usp=sharing}{\textcolor{blue}{Minor Review}}).}
+     \vspace{-6pt}
     \resumeItem{\textbf{Ali BaniAsad}, Reza Pordal, Alireza Sharifi, Hadi Nobahari. "Attitude Control of a 3-DoF Quadrotor Platform Using a Linear Quadratic Integral Differential Game Approach." \textit{ISA Transactions,
         \href{https://doi.org/10.1016/j.isatra.2024.03.005}{\textcolor{blue}{Elsevier}}}, 2024.}
         \vspace{-6pt}
-    \resumeItem{Alireza Sharifi, \textbf{Ali BaniAsad}. "Applied an In-Motion Transfer Alignment Approach During Global Positioning System Outages Utilizing a Recurrent Neural Network Algorithm." \textit{Engineering Applications of Artificial Intelligence}, 2025
-	(\href{https://drive.google.com/file/d/19qd1IjmCQMv2Alldh55oYQSTPr03vjJL/view?usp=sharing}{\textcolor{blue}{Under Review}}).}
-     \vspace{-6pt}
+      
+        \resumeItem{\textbf{Ali BaniAsad} and Hadi Nobahari. "Robust DDPG Reinforcement Learning Differential Game Guidance in Low-Thrust, Multi-Body Dynamical Environments." \textit{The 23rd International Conference of Iranian Aerospace Society}, 2025. (Accepted)}
+        \vspace{-6pt}
+        \resumeItem{Mahdi Amirpour,  \textbf{Ali BaniAsad}, Hadi Nobahari. "Reinforcement Learning-Based Controller Design for a Suspended Ball Plant" \textit{The 23rd International Conference of Iranian Aerospace Society}, 2025. (Accepted)}
+        \vspace{-6pt}
     \resumeItem{Hadi Nobahari,  \textbf{Ali BaniAsad}, Alireza Sharifi. "Linear Quadratic Integral Differential Game Applied to the Real-time Control of a Quadrotor Experimental Setup." \textit{ICRoM, \href{https://doi.org/10.1109/ICRoM57054.2022.10025263}{\textcolor{blue}{IEEE}}}, 2022.}
      %\vspace{-6pt}
     %\resumeItem{Alireza Sharifi, \textbf{Ali BaniAsad}. "Robust In-Motion Transfer Alignment of Low-Grade Inertial Navigation Systems with Recurrent Neural Networks in the Event of Reference Malfunction." \textit{IEEE}, 2024 (Active)}
@@ -207,100 +214,133 @@
 %-----------EXPERIENCE-----------
 \section{Research Experience}
   \resumeSubHeadingListStart
+
+  \resumeSubheading
+  {Embedded RL Control for Robots on Resource-Constrained Hardwares%
+    {\href{https://github.com/alibaniasad1999/master-thesis}{ \faGithub}}%
+  }{Aug.\ 2022 -- Apr.\ 2025}
+  {Master’s Thesis, Sharif University of Technology}{Tehran, Iran}
+  \resumeItemListStart
+\resumeItem{Built a 15 k-LOC PyTorch/TensorFlow + Gymnasium stack for real-time control on embedded robots.}%
+\resumeItem{Implemented four RL algorithms: DDPG, TD3, SAC, and PPO.}%
+\resumeItem{Outperformed classical MPC, cutting trajectory-tracking error by 22\%  within strict on-board CPU/memory limits.}%
+
+
+    % \resumeItem{Introduced disturbance-augmented adversarial training; policies maintained stable guidance under $10\times$ worst-case perturbations in evaluation sweeps.}%
+    \resumeItem{Built a mixed-fidelity stack spanning Python, MATLAB/Simulink, and C++.}%
+    \resumeItem{Crafted zero-sum disturbance-augmented training that kept policies stable at $10\times$ worst-case perturbations.}%
+\resumeItem{Validated robustness on standard Gymnasium locomotion tasks—Ant, Humanoid, HalfCheetah, and Walker2d.}%
+\resumeItem{Created a ROS 2 hardware-in-the-loop node to validate RL policies on embedded hardware.}%
+    % \resumeItem{Open-sourced full code, LaTeX report, and Jupyter demos to enable one-command reproduction for future researchers.}%
+  \resumeItemListEnd
     \resumeSubheading
       {Researcher at
       	\href{https://www.linkedin.com/company/cnav-lab/}{\textcolor{blue}{CNAV Lab \faLinkedin}} \href{https://github.com/CNAVLAB}{\faGithub} \textcolor{red}{
           \href{https://youtube.com/@cnavlab?si=Fc-Y3oyKdgAmz3-5}{\faYoutube}}
-      	 }{May 2020 -- Ongoing}
-      {Researcher}{Tehran, Iran}
+      	 }{May\ 2020 -- Feb.\ 2025
+         }
+      {Head of Lab (Current), Researcher (Former)}{Tehran, Iran}
       \resumeItemListStart
         \resumeItem{Led projects on \textbf{Embedded AI} in C, \textbf{Reinforcement Learning (RL)}, and \textbf{ROS} for robotic control systems.}
-        \resumeItem{Developed \textbf{Multi-Agent} tech and AI navigation, enhancing vehicle \textbf{Precision} and \textbf{Safety}.}
+        % \resumeItem{Developed \textbf{Multi-Agent} tech and AI navigation, enhancing vehicle \textbf{Precision} and \textbf{Safety}.}
+        \resumeItem{Robust in-motion Transfer Alignment method based on the multilayer Neural Network.\begin{itemize}
+        \item Proposed \textbf{LSTM–MLP} that performs in-motion using only IMU + SINS data when GPS is unavailable.
+        \item Cuts navigation drift to \(\!<0.1\%\) of the Kalman-INS error during 100 s GPS outages.
+        \item Generalises across ship, ROV, and car datasets, outperforming conventional methods out of domain.
+        \end{itemize}
+        }
       \resumeItemListEnd
+    % \resumeSubheading
+    %   {Reinforcement Learning for Robotics in Complex Dynamical Systems 
+    %   	{\href{https://github.com/alibaniasad1999/master-thesis}{{\normalfont \textit{\textcolor{blue}{} \faGithub  \textcolor{blue}{}
+    %   	}}} }
+    %   }{August 2022 -- February 2025}
+    %   {Reinforcement Learning for Robotics in Complex Dynamical Systems}{Tehran, Iran}
+    %   \resumeItemListStart
+    %     \resumeItem{Investigated various \textbf{Reinforcement Learning} methods and compared their performance to classic control strategies.}
+    %     \resumeItem{Integrated \textbf{ROS} to implement and test \textbf{Real-World Robotic} systems, validating performance in practical scenarios.}
+    % \resumeItemListEnd
 
     \resumeSubheading
-      {Master's Thesis
-      	{\href{https://github.com/alibaniasad1999/master-thesis}{{\normalfont \textit{\textcolor{blue}{[GitHub} \faGithub  \textcolor{blue}{]}
-      	}}} }
-      }{August 2022 -- February 205 (Expected)}
-      {Reinforcement Learning for Robotics in Complex Dynamical Systems}{Tehran, Iran}
-      \resumeItemListStart
-        \resumeItem{Investigated various \textbf{Reinforcement Learning} methods and compared their performance to classic control strategies.}
-        \resumeItem{Integrated \textbf{ROS} to implement and test \textbf{Real-World Robotic} systems, validating performance in practical scenarios.}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {Bachelor's Thesis
-    	{\href{https://github.com/alibaniasad1999/bachelor-thesis}{{\normalfont \textit{\textcolor{blue}{[GitHub} \faGithub  \textcolor{blue}{]}
+    {
+    Game Theory-Based Control for Three Degrees of Freedom Platform    	{\href{https://github.com/alibaniasad1999/bachelor-thesis}{{\normalfont \faGithub 
     	}}} }
-    }{February 2021 -- September 2023}
-    {Game Theory-Based Control for Three Degrees of Freedom Platform}{Tehran, Iran}
+    {Feb.\ 2021 -- Sep.\ 2023
+    }
+    {Bachelor's Thesis, Sharif University of Technology}{Tehran, Iran}
     \resumeItemListStart
     \resumeItem{Controlled a
     \href{https://gcrc.sharif.edu/استند-آزمایشگاهی-کنترل-وضعیت-سه-درجه-آ/}{\textcolor{blue}{3DoF setup}}
     using \textbf{Differential Game} theory, employing \textbf{Nash Equilibrium} for \textbf{Robust} controller.}
     \resumeItem{Evaluated performance through Simulink simulations and practical \textbf{Implementation} on an experimental setup.}
+    \resumeItem{Modelled a 3-DoF quadcopter stand and implemented a MATLAB/Simulink–to–C pipeline for real-time testing.}%
+
+
     \resumeItemListEnd
+
+
+  
+
 
   \resumeSubHeadingListEnd
 \vspace{-20pt}
 
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-8pt}
-    \resumeSubHeadingListStart
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \vspace{-8pt}
+%     \resumeSubHeadingListStart
 
-    \resumeProjectHeading
-    {
-    	\textbf{\href{https://github.com/alibaniasad1999/Coordination-of-Multi-Agent-Autonomous-Systems}{\textcolor{blue}{Coordination of Multi-Agent Autonomous Systems}}}
-    	$|$ \emph{Embedded C, HIL, Optimization, Simulink}}{July 2023}
-    \resumeItemListStart
-    \resumeItem{Developed a multi-agent model for optimized autonomous coordination under
-    \textbf{Real-World Constraints}.}
-    \resumeItem{Implemented and validated the model with Simulink simulations and \textbf{HIL} testing using a \textbf{Microcontroller}.}
-    %		\resumeItem{Conducted field tests with a 30-drone system, demonstrating effective swarm coordination.}
-    \resumeItemListEnd
+%     \resumeProjectHeading
+%     {
+%     	\textbf{\href{https://github.com/alibaniasad1999/Coordination-of-Multi-Agent-Autonomous-Systems}{\textcolor{blue}{Coordination of Multi-Agent Autonomous Systems}}}
+%     	$|$ \emph{Embedded C, HIL, Optimization, Simulink}}{July 2023}
+%     \resumeItemListStart
+%     \resumeItem{Developed a multi-agent model for optimized autonomous coordination under
+%     \textbf{Real-World Constraints}.}
+%     \resumeItem{Implemented and validated the model with Simulink simulations and \textbf{HIL} testing using a \textbf{Microcontroller}.}
+%     %		\resumeItem{Conducted field tests with a 30-drone system, demonstrating effective swarm coordination.}
+%     \resumeItemListEnd
 
-          \vspace{-18pt}
-          \resumeProjectHeading
-          {\textbf{\href{https://github.com/alibaniasad1999/Heuristic-optimization-algorithms}{\textcolor{blue}{Multi-Objective Heuristic Optimization}}} $|$ \emph{OOP, Optimization Algorithms, Python}}{February 2023}
-          \resumeItemListStart
-          \resumeItem{Implemented the
-          	\href{https://link.springer.com/article/10.1007/s12652-022-04332-8}{\textcolor{blue}{REMARK}}
-          	algorithm for \textbf{Multi-Objective} optimization with conflicting objectives.}
-          \resumeItem{Utilized heuristic methods to achieve high approximations of the \textbf{Pareto Set}, balancing trade-offs between objectives.}
-          \resumeItemListEnd
-
-
-          \vspace{-18pt}
+%           \vspace{-18pt}
+%           \resumeProjectHeading
+%           {\textbf{\href{https://github.com/alibaniasad1999/Heuristic-optimization-algorithms}{\textcolor{blue}{ Multi-Objective Heuristic Optimization}}} $|$ \emph{OOP, Optimization Algorithms, Python}}{February 2023}
+%           \resumeItemListStart
+%           \resumeItem{Implemented the
+%           	\href{https://link.springer.com/article/10.1007/s12652-022-04332-8}{\textcolor{blue}{REMARK}}
+%           	algorithm for \textbf{Multi-Objective} optimization with conflicting objectives.}
+%           \resumeItem{Utilized heuristic methods to achieve high approximations of the \textbf{Pareto Set}, balancing trade-offs between objectives.}
+%           \resumeItemListEnd
 
 
-          \resumeProjectHeading
-          {
-          	\textbf{\href{https://github.com/alibaniasad1999/DATCOM-Trim-Diagram-GUI}{\textcolor{blue}{Advanced Aircraft Trim Stability Analysis}}}
-          	$|$ \emph{Advanced UI, Aircraft Control, Python}}{March 2022}
-          \resumeItemListStart
-          \resumeItem{Developed an advanced UI software, \textbf{Optimizing Analysis Processes} and enhancing design precision.}
-          %      \resumeItem{Facilitated the creation and analysis of aircraft trim diagrams, enhancing design precision.}
-
-          \resumeItemListEnd
+%           \vspace{-18pt}
 
 
+%           \resumeProjectHeading
+%           {
+%           	\textbf{\href{https://github.com/alibaniasad1999/DATCOM-Trim-Diagram-GUI}{\textcolor{blue}{Advanced Aircraft Trim Stability Analysis}}}
+%           	$|$ \emph{Advanced UI, Aircraft Control, Python}}{March 2022}
+%           \resumeItemListStart
+%           \resumeItem{Developed an advanced UI software, \textbf{Optimizing Analysis Processes} and enhancing design precision.}
+%           %      \resumeItem{Facilitated the creation and analysis of aircraft trim diagrams, enhancing design precision.}
 
-          \vspace{-18pt}
-          \resumeProjectHeading
-          {
-          	\textbf{\href{https://github.com/alibaniasad1999/Airplane-Design-II}{\textcolor{blue}{AIAA Regional Jet Design Competition}}}
-          	$|$ \emph{Aircraft Design, Computer Modeling, MATLAB, Python}}{June 2021}
-          \resumeItemListStart
-          \resumeItem{Fully designed a regional jet, encompassing \textbf{Coding}, \textbf{Computer Design}, and \textbf{Simulations}.}
-          %          \resumeItem{Showcased expertise in aircraft development through comprehensive modeling and analysis for the competition.}
-          \resumeItemListEnd
+%           \resumeItemListEnd
 
 
-    \resumeSubHeadingListEnd
-\vspace{-18pt}
+
+%           \vspace{-18pt}
+%           \resumeProjectHeading
+%           {
+%           	\textbf{\href{https://github.com/alibaniasad1999/Airplane-Design-II}{\textcolor{blue}{AIAA Regional Jet Design Competition}}}
+%           	$|$ \emph{Aircraft Design, Computer Modeling, MATLAB, Python}}{June 2021}
+%           \resumeItemListStart
+%           \resumeItem{Fully designed a regional jet, encompassing \textbf{Coding}, \textbf{Computer Design}, and \textbf{Simulations}.}
+%           %          \resumeItem{Showcased expertise in aircraft development through comprehensive modeling and analysis for the competition.}
+%           \resumeItemListEnd
+
+
+%     \resumeSubHeadingListEnd
+% \vspace{-18pt}
 
 
 
