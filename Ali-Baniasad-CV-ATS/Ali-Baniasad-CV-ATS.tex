@@ -1,0 +1,336 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Curriculum Vitae Template Latex Code                  %
+%                                                                                %
+%                              Author: Manuel Pasqual Paul                       %
+%                      Email: paul.manuel.pasqual@gmail.com                      %
+%                                                                                %
+%                             Last Edited: January 2020                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Specifications %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{anysize}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{marvosym}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[left=0.5in,right=0.75in,top=1in,bottom=1in]{geometry}
+\usepackage{ifthen}
+\usepackage [autostyle, english = american]{csquotes}
+\newcommand{\etal}{{et al.}}
+\MakeOuterQuote{"}
+\newboolean{noshad}
+% \usepackage{blackrule}
+\setboolean{noshad}{false} % Set to false to omit the author section
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Name & Contact Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	{\Large \bfseries Ali BaniAsad} \\
+	\vspace{4pt}
+	{\large Curriculum Vitae}
+\end{center}
+
+\noindent
+Email: alibaniasad1999@gmail.com \\
+Phone: (+98) 991-214-7276 \\
+LinkedIn: linkedin.com/in/alibaniasad1999 \\
+GitHub: github.com/alibaniasad1999 \\
+Website: alibaniasad1999.github.io \\
+Google Scholar: Ali BaniAsad
+
+\noindent\rule[0.5ex]{\linewidth}{.5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries PROFESSIONAL SUMMARY}
+\end{center}
+
+\vspace{-4pt}
+\noindent
+Aerospace Engineering graduate student with 4+ years of research experience in reinforcement learning, robotics, and embedded systems. Published 5 papers in control systems and AI applications. Proven expertise in developing robust multi-agent RL algorithms, embedded machine learning for resource-constrained hardware, and real-time control systems using ROS, PyTorch, and TensorFlow. Strong background in differential game theory, optimal control, and system identification with hands-on experience in hardware-in-the-loop testing.
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TECHNICAL SKILLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries TECHNICAL SKILLS}
+\end{center}
+
+\vspace{-4pt}
+\noindent
+\textbf{Programming Languages:} C, C++, Embedded C, Python, MATLAB \\
+\textbf{Machine Learning Frameworks:} PyTorch, TensorFlow, Keras, JAX, Scikit-learn, OpenAI Gym \\
+\textbf{Robotics \& Simulation:} ROS, ROS 2, Gazebo, MuJoCo, Simulink \\
+\textbf{Data Analysis:} NumPy, Pandas, Matplotlib, Seaborn, Plotly, OpenCV \\
+\textbf{Development Tools:} Git, Linux, LaTeX, Terminal \\
+\textbf{AI/ML Specializations:} Reinforcement Learning, Deep Learning, Multi-Agent Systems, Embedded Machine Learning, Neural Networks, Computer Vision, Optimization, Game Theory \\
+\textbf{Control Systems:} Optimal Control, Automatic Control, Robust Control, MPC, System Identification \\
+\textbf{Languages:} English (TOEFL iBT 96), Farsi (Native)
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries EDUCATION}
+\end{center}
+
+\vspace{-4pt}
+
+\noindent
+\textbf{Master of Science in Aerospace Engineering} \hfill Sep 2022 -- Sep 2025 \\
+Sharif University of Technology, Tehran, Iran \\
+Thesis: Embedded RL Control for Robots \\
+Advisors: Hadi Nobahari, PhD
+
+\vspace{4pt}
+
+\noindent
+\textbf{Bachelor of Science in Aerospace Engineering} \hfill Sep 2017 -- May 2022 \\
+Sharif University of Technology, Tehran, Iran \\
+Thesis: Game Theory-Based Control for 3-DoF Platform (Best Undergraduate Thesis Award)
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESEARCH EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries RESEARCH EXPERIENCE}
+\end{center}
+
+\vspace{-4pt}
+
+\noindent
+\textbf{Graduate Research Assistant} \hfill Aug 2022 -- Apr 2025 \\
+Sharif University of Technology, Tehran, Iran \\
+Master's Thesis: Embedded RL Control for Robots \\
+Supervisor: Hadi Nobahari, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Developed zero-sum disturbance-augmented reinforcement learning training framework achieving stable policies under 10x worst-case perturbations for robotic control systems
+	\item Built 15,000+ lines of code RL control stack implementing DDPG, TD3, SAC, and PPO algorithms in PyTorch and TensorFlow with OpenAI Gym integration for embedded robot platforms
+	\item Optimized neural network models through quantization techniques to reduce memory footprint by 75\% for deployment on CPU-constrained embedded hardware
+	\item Validated algorithm robustness on 4 Gymnasium locomotion benchmarks (Ant, Humanoid, HalfCheetah, Walker2d) demonstrating 30\% improvement in disturbance rejection compared to baseline methods
+	\item Implemented C++ and Python ROS 2 hardware-in-the-loop node for on-board testing and real-time control validation
+	\item Open-sourced complete codebase with LaTeX documentation and Jupyter notebooks enabling one-command reproduction for research community
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Research Assistant and Lab Head} \hfill May 2020 -- Feb 2025 \\
+CNAV Lab, Sharif University of Technology, Tehran, Iran \\
+Supervisors: Hadi Nobahari, PhD and Alireza Sharifi, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Led 5+ research projects on embedded AI in C, reinforcement learning algorithms, and ROS-based robotic control systems as Lab Head
+	\item Designed reinforcement learning algorithms improving robotic navigation accuracy by 40\% and enhancing autonomous decision-making capabilities in dynamic environments
+	\item Developed LSTM-MLP neural network architecture for in-motion transfer alignment using IMU and SINS data during GPS outages, published in Engineering Applications of Artificial Intelligence
+	\item Reduced navigation drift to less than 0.1\% of Kalman-INS error during 100-second GPS outages in real-world testing scenarios
+	\item Achieved cross-domain generalization across ship, ROV, and car datasets with 25\% performance improvement over conventional Kalman filtering methods
+	\item Published 2 journal papers and 2 conference papers on AI-enhanced navigation and robust control systems
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Undergraduate Research Assistant} \hfill Feb 2021 -- Sep 2023 \\
+Sharif University of Technology, Tehran, Iran \\
+Bachelor's Thesis: Game Theory-Based Control for 3-DoF Platform \\
+Supervisor: Hadi Nobahari, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Developed robust control system for 3-DoF quadcopter test stand using differential game theory and Nash equilibrium optimization achieving 45\% better disturbance rejection than baseline controllers
+	\item Performed system identification and parameter estimation using optimization algorithms to model quadcopter dynamics in Simulink with 95\% accuracy
+	\item Implemented real-time controller through MATLAB Simulink-to-C code generation pipeline for embedded hardware deployment on microcontroller
+	\item Benchmarked controller performance against ADRC and DOBC methods demonstrating superior robustness to external disturbances and parameter uncertainties
+	\item Awarded Best Undergraduate Thesis by Iranian Aerospace Society for excellence in control systems research
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Research Project: Multi-Agent Autonomous Systems} \hfill July 2023 \\
+Sharif University of Technology, Tehran, Iran \\
+Supervisor: Hadi Nobahari, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Optimized multi-agent swarm model addressing communication delays and obstacle avoidance for coordinated robot navigation
+	\item Implemented flocking behavior algorithms in Simulink and validated through hardware-in-the-loop testing using embedded C on microcontroller platforms
+	\item Demonstrated system robustness and reliability through real-time performance validation in dynamic environments
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Research Project: Multi-Objective Heuristic Optimization} \hfill Feb 2023 \\
+Sharif University of Technology, Tehran, Iran \\
+Supervisor: Hadi Nobahari, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Implemented REMARK algorithm for multi-objective optimization with conflicting objectives enabling effective trade-off evaluation
+	\item Utilized heuristic optimization methods achieving high-quality approximations of Pareto Set for optimal multi-criteria decision-making
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Research Project: Aircraft Trim Stability Analysis} \hfill Mar 2022 \\
+Sharif University of Technology, Tehran, Iran \\
+Supervisor: Afshin Banazadeh, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Developed advanced GUI software for aircraft stability analysis providing real-time interactive adjustments for performance evaluation
+	\item Created DATCOM-based trim diagram tool streamlining aircraft design process for engineers and researchers
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{AIAA Regional Jet Design Competition} \hfill June 2021 \\
+Sharif University of Technology, Tehran, Iran \\
+Supervisor: Afshin Banazadeh, PhD
+
+\begin{itemize} \itemsep 1pt
+	\item Led regional jet design project integrating multidisciplinary analysis for aerodynamic performance and industry compliance
+	\item Applied computer modeling for aerodynamic, structural, and performance analysis of complete aircraft design
+	\item Developed automated design cycle workflow enabling seamless updates across all design stages reducing iteration time by 60\%
+	\item Presented comprehensive design report and technical presentation to faculty panel
+\end{itemize}
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PUBLICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries PUBLICATIONS}
+\end{center}
+
+\vspace{-4pt}
+
+\noindent
+\textbf{Journal Papers}
+
+\begin{itemize} \itemsep -1pt
+	\item A. Sharifi, A. BaniAsad, and S. Mozafari, "Applied an in-motion transfer alignment approach during global positioning system outages utilizing a recurrent neural network algorithm," Engineering Applications of Artificial Intelligence, vol. 157, pp. 111167, 2025
+	\item A. BaniAsad, et al., "Attitude Control of a 3-DoF Quadrotor Platform Using a Linear Quadratic Integral Differential Game Approach," ISA Transactions, vol. 148, pp. 515-527, 2024
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Conference Papers}
+
+\begin{itemize} \itemsep -1pt
+	\item A. BaniAsad and H. Nobahari, "Robust DDPG Reinforcement Learning Differential Game Guidance in Low-Thrust, Multi-Body Dynamical Environments," Proc. of 23rd International Conference of Iranian Aerospace Society, 2025
+	\item M. Amirpour, A. BaniAsad, and H. Nobahari, "Reinforcement Learning-Based Controller Design for a Suspended Ball Plant," Proc. of 23rd International Conference of Iranian Aerospace Society, 2025
+	\item H. Nobahari, A. BaniAsad, and A. Sharifi, "Linear Quadratic Integral Differential Game applied to the Real-time Control of a Quadrotor Experimental setup," Proc. of 2022 10th RSI International Conference on Robotics and Mechatronics, 2022
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Preprints and Under Review}
+
+\begin{itemize} \itemsep -1pt
+	\item A. BaniAsad, H. Nobahari, "Robustness on Demand: Transformer-Directed Switching in Multi-Agent RL," in preparation, 2025
+	\item R. Pordal, A. Sharifi, and A. BaniAsad, "Ellipsoidal Set-Theoretic Design of Robust Safety Filters for Constrained Linear Systems," arXiv: 2510.22790, 2025
+\end{itemize}
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEACHING EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries TEACHING EXPERIENCE}
+\end{center}
+
+\vspace{-4pt}
+
+\noindent
+\textbf{Section Leader} \hfill Apr 2025 -- June 2025 \\
+Stanford University Code in Place (CS106A), Online
+
+\begin{itemize} \itemsep -2pt
+	\item Mentored 10 international learners in Python programming fundamentals through weekly section meetings
+	\item Provided code review and debugging support for student projects demonstrating pedagogical expertise
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Teaching Assistant} \hfill Sep 2018 -- Present \\
+Sharif University of Technology, Tehran, Iran
+
+\begin{itemize} \itemsep -2pt
+	\item Automatic Control (2021 -- Present) - Instructors: Hadi Nobahari, PhD and Alireza Sharifi, PhD
+	\item Control Lab (2022 -- Present) - Instructors: Hadi Nobahari, PhD and Alireza Sharifi, PhD
+	\item Dynamics (Jan 2023 -- Dec 2023) - Instructor: Alireza Sharifi, PhD
+	\item Aircraft Design II (Fall 2021) - Instructor: Afshin Banazadeh, PhD
+	\item Fundamentals of Programming in C/C++ (Fall 2018)
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent
+\textbf{Volunteer Tutor} \hfill Sep 2020 -- Dec 2021 \\
+Virgol Charity, Tehran, Iran
+
+\begin{itemize} \itemsep -2pt
+	\item Provided university entrance exam preparation tutoring to underprivileged students in STEM subjects
+\end{itemize}
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AWARDS AND HONORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries AWARDS AND HONORS}
+\end{center}
+
+\vspace{-4pt}
+
+\begin{itemize} \itemsep -1pt
+	\item Best Undergraduate Thesis Award, Iranian Aerospace Society \hfill 2023
+	\item National Master's Entrance Exam in Aerospace Engineering, Ranked 23 of 1000+ \hfill 2022
+	\item National Bachelor's Entrance Exam, Top 0.5\% of 150,000 participants \hfill 2017
+	\item National Organization for Development of Exceptional Talents (NODET) Member \hfill 2010 -- 2017
+\end{itemize}
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CERTIFICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries CERTIFICATIONS}
+\end{center}
+
+\vspace{-4pt}
+
+\begin{itemize} \itemsep -2pt
+	\item Robotics Specialization (6 courses), University of Pennsylvania, Coursera
+	\item Reinforcement Learning Specialization (4 courses), University of Alberta, Coursera
+	\item IBM AI Engineering Professional Certificate (6 courses), IBM, Coursera
+	\item Fundamentals of Accelerated Computing with CUDA Python, NVIDIA
+	\item Neural Networks and Deep Learning, deeplearning.ai, Coursera
+	\item Introduction to Embedded Machine Learning, Edge Impulse, Coursera
+	\item Game Theory, Stanford University, Coursera
+	\item Python Data Structures, University of Michigan, Coursera
+\end{itemize}
+
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SELECTED COURSEWORK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	{\noindent \bfseries SELECTED COURSEWORK}
+\end{center}
+
+\vspace{-4pt}
+
+\noindent
+\textbf{Programming and Computational Methods:} Basic C Programming (20/20), Numerical Calculations (20/20) \\
+\textbf{Mathematics and Statistics:} Engineering Mathematics (19.8/20), Probability and Statistics (20/20) \\
+\textbf{Control Systems:} Automatic Control (18.1/20), Control Lab (18.5/20), Optimal Control (17.5/20) \\
+\textbf{Aerospace Engineering:} Aircraft Design II (18.3/20), Flight Dynamics II (18.3/20) \\
+\textbf{Research:} Bachelor Thesis (20/20)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
